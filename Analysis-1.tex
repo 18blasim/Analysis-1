@@ -167,16 +167,11 @@ Binomische Formel \qquad \qquad \qquad
 	(a+b)^n = \sum\limits_{k = 0}^{n} \binom{n}{k} a^{n-k} b^{k}
 \end{array}\end{math}   \\
 \\
-Äquivalenz von Masse und Energie
-\begin{math}\begin{array}{l}
-	E = mc^2
-\end{array}\end{math}\\
-\\
-Wichtige Zahlen: $\sqrt{2} = 1,41421$\quad $\pi=$ ist genau 3 \quad $e = 2,71828$ \quad $\pi =  3,14159$
+Wichtige Zahlen: $\sqrt{2} = 1,41421$ \quad $e = 2,71828$ \quad $\pi =  3,14159$
 
 \paragraph{Fakultäten} % (fold)
 \label{par:fakultaeten}
-$n! = 1 \cdot 2 \cdot 3 \cdot \ldots \cdot n$ \qquad  $0! = 1! = 1$
+$n! = 1 \cdot 2 \cdot 3 \cdot \ldots \cdot n$ \qquad  $0! = 1! = 1$ \quad $(n+1)! = n! \cdot (n+1)$
 
 % paragraph fakultäten (end)
 % subsubsection subsection_name (end)
@@ -186,7 +181,7 @@ $n! = 1 \cdot 2 \cdot 3 \cdot \ldots \cdot n$ \qquad  $0! = 1! = 1$
 \subsection{Mengen}
 % ----------------------------------------------------------------------
 
-Eine Zusammenfassung wohlunterschiedener Elemente zu einer Menge\\
+Eine Zusammenfassung wohlunterschiedener Elemente zu einer Menge\\ %Meh
 explizite Angabe: $A=\{1;2;3\}$\\
 Angabe durch Eigenschaft: $A=\{n\in\mathbb N\ \vert\ 0<n<4\}$
 \subsubsection{Für alle Mengen A,B,C gilt:}
@@ -213,7 +208,7 @@ IS: $n \rightarrow n+1$: \quad Zeige $f(n+1)=\underset{=wahr}{f(n)}  \dotsc=g(n+
 
 \subsection{Komplexe Zahlen}
 % ----------------------------------------------------------------------
-Eine komplexe Zahl $z=a+b\mathbf{i},\ z\in \mathbb C, \quad a,b \in \mathbb R$ besteht aus einem Realteil $\Re(z)=a$ und einem Imaginärteil $\Im(z)=b$, wobei $\mathbf{i}=\sqrt{-1}$ die immaginären Einheit ist.
+Eine komplexe Zahl $z=a+b\mathbf{i},\ z\in \mathbb C, \quad a,b \in \mathbb R$ besteht aus einem Realteil $Re(z)=a$ und einem Imaginärteil $Im(z)=b$, wobei $\mathbf{i}=\sqrt{-1}$ die immaginären Einheit ist.
 Es gilt: \quad $i^2 = -1$ \quad $i^4 = 1$
 \subsubsection{Kartesische Koordinaten}
 Rechenregeln:\\
@@ -303,7 +298,8 @@ Polynomasymptote $P(x)$: $f(x):=\frac{A(x)}{Q(x)}=P(x)+ \underset{\ra 0}{\frac{B
 \textbf{Zwischenwertsatz:} $\forall y \in [f(a),f(b)]\ \exists x\in [a,b]:f(x)=y$\\
 \textbf{Satz von Rolle:} Falls $f(a)=f(b)$, dann $\exists x_0: f' (x_0) = 0$\\
 \textbf{Mittelwertsatz:} Falls $f$ diffbar, dann $\exists x_0:f'(x_0)=\frac{f(b)-f(a)}{b-a}$\\
-\textbf{Regel von L'Hospital}:\\ $\lim\limits_{x \rightarrow a} \frac{f(x)}{g(x)} = \left[ \frac{0}{0} \right] / \left[ \frac{\infty}{\infty} \right] \rightarrow \lim\limits_{x \rightarrow a} \frac{f(x)}{g(x)} = \lim\limits_{x \rightarrow a} \frac{f'(x)}{g'(x)}$
+\textbf{Regel von L'Hospital}:\\ $\lim\limits_{x \rightarrow a} \frac{f(x)}{g(x)} = \left[ \frac{0}{0} \right] / \left[ \frac{\infty}{\infty} \right] \rightarrow \lim\limits_{x \rightarrow a} \frac{f(x)}{g(x)} = \lim\limits_{x \rightarrow a} \frac{f'(x)}{g'(x)} \\
+\lim\limits_{x \rightarrow 0} \frac{\sin(x)}{x} = 1 \quad \lim\limits_{x \rightarrow 0} \frac{b sin(bx)}{x} = b^2$
 
 % ----------------------------------------------------------------------
 \subsubsection{Polynome $P(x)\in\mathbb R[x]_n$}
@@ -347,7 +343,7 @@ x & 0 & \pi / 6 & \pi / 4 & \pi / 3 & \pi / 2 & \frac{2}{3}\pi& \frac{3}{4}\pi& 
 
 \subsubsection{Potenzen/Logarithmus}
 \begin{equation*}
-\ln(u^r)=r\ln u
+\ln(u^r)=r\ln u \\ $e^(lnx) = x$
 \end{equation*}
 
 \subsection{Folgen}
@@ -426,7 +422,7 @@ Absolute Konvergenz($\sum^\infty_{n=0} |a_n|=a$ konvergiert), falls:\\
 	\begin{cases}
 		\rho < 1 \Ra  ~\sum^\infty_{n=0} a_n \text{ konvergiert absolut} \\
 		\rho > 1 \Ra  ~\sum^\infty_{n=0} a_n \text{ divergiert} \\
-		\rho = 1 \Ra  ~\sum^\infty_{n=0} a_n \text{ keine Aussage möglich}
+		\rho = 1 \Ra  ~\sum^\infty_{n=0} a_n \text{ keine Aussage möglich, anderen Weg versuchen}
 	\end{cases}
 \end{eqnarray*}
 \\
@@ -436,15 +432,15 @@ Jede absolute konvergente Reihe ($\sum^\infty_{n=0} |a_n|$) ist konvergent ($\su
 \subsection{Potenzreihen} % (fold)
 % ----------------------------------------------------------------------
 \begin{equation*}
-f(x)=\sum_{n=0}^\infty a_n \cdot (x-c)^n
+f(x)=\sum_{n=0}^\infty a_n \cdot (x-x_0)^n
 \end{equation*}
 \subsubsection{Konvergenzradius}
 $R = \lim\limits_{n\rightarrow \infty} \abs{\frac{a_n}{a_{n+1}}}=\frac{1}{\lim\limits_{n\rightarrow \infty}\sqrt[n]{\abs{a_n}}}$ \\
 $R =\liminf\limits_{n\rightarrow \infty} \abs{\frac{a_n}{a_{n+1}}}=\frac{1}{\limsup\limits_{n\rightarrow \infty}\sqrt[n]{\abs{a_n}}}$ \\ \\
 $f(x)\begin{cases}
-	\text{konvergiert absolut} & \abs{x-c} < R \\
-	\text{divergiert} & \abs{x-c} > R \\
-	\text{keine Aussage möglich} & \abs{x-c} = R
+	\text{konvergiert absolut} & \abs{x-x_0} < R \\
+	\text{divergiert} & \abs{x-x_0} > R \\
+	\text{keine Aussage möglich} & \abs{x-x_0} = R
 	\end{cases}$\\ \\
 Bei reellen Reihen gilt: \\
 $\Ra x$ konvergiert im offenen Intervall $I=(c-R,c+R)$ \\
@@ -471,7 +467,11 @@ $\rightarrow R=\left(R_w\right)^\frac{1}{\lambda}$
 \end{equation*}
 \begin{equation*}
 	 \cos (z) = \sum_{n = 0}^{\infty} (-1)^n \frac{z^{2n}}{(2n)!} = \frac{e^{iz} + e^{-iz}}{2}\\
- \end{equation*}
+\end{equation*}
+\begin{equation*}
+\left( \frac{x}{x+n} \right)^n = \lim\limits_{n\to\infty}\frac{1}{e^x}
+\end{equation*}
+ 
 % subsection potenzreihen (end)
 
 
@@ -500,6 +500,7 @@ $x_{n+1}=x_n-\frac{f(x_n)}{f'(x_n)}$ mit Startwert $x_0$
 \item Integration von Potenzreihen: $f(x)=\sum_{k=0}^{\infty}a_k(x-a)^k$ \\
 Stammfunktion: $F(x)=\sum_{k=0}^{\infty}\frac{a_k}{k+1}(x-a)^{k+1}$
 \item Brechstange: $t=\tan(\frac{x}{2})$ \quad $\mathrm dx = \frac{2}{1+t^2} \mathrm dt$ \\ $\sin(x) \rightarrow \frac{2t}{1+t^2}$ \qquad $\cos(x) \rightarrow \frac{1-t^2}{1+t^2}$
+Partialbruchzerlegung %weiter
 \end{itemize}
 
 \subsubsection{Integrationsregeln}
